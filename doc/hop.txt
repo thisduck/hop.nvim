@@ -140,6 +140,7 @@ creates a variant of the command that will only run for the current line.
 `:HopChar1CurrentLineBC`                                  *:HopChar1CurrentLineBC*
 `:HopChar1CurrentLineAC`                                  *:HopChar1CurrentLineAC*
 `:HopChar1MW`                                                        *:HopChar1MW*
+`:HopChar1Start`                                                  *:HopChar1Start*
     Type a key and immediately hint the document for this key.
 
     This is akin to calling the |hop.hint_char1| Lua Function

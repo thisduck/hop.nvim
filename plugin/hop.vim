@@ -31,6 +31,7 @@ command! HopChar1CurrentLine   lua require'hop'.hint_char1({ current_line_only =
 command! HopChar1CurrentLineBC lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.BEFORE_CURSOR, current_line_only = true })
 command! HopChar1CurrentLineAC lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = true })
 command! HopChar1MW            lua require'hop'.hint_char1({ multi_windows = true })
+command! HopChar1Start         lua require'hop'.hint_char1({ skip_starting_whitespace = true })
 
 " The jump-to-char-2 command.
 command! HopChar2              lua require'hop'.hint_char2()

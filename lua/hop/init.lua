@@ -520,6 +520,10 @@ function M.hint_char1(opts)
     generator = jump_target.jump_targets_by_scanning_lines
   end
 
+  if opts.skip_starting_whitespace and c == ' ' then
+    return M.hint_with(generator(jump_target.regex_by_searching("\\v\\S\\zs ")), opts)
+  end
+
   M.hint_with(
     generator(jump_target.regex_by_case_searching(c, true, opts)),
     opts
